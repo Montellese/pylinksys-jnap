@@ -1,0 +1,11 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+
+[tool.pylint.MASTER]
+init-hook='import sys; sys.path.append("./pylinksys-jnap")'
+
+[tool.pylint.FORMAT]
+max-line-length=120

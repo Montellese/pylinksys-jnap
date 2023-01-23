@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+
+[dev-packages]
+autoflake = "*"
+bandit = "*"
+black = "*"
+flake8 = "*"
+isort = "*"
+licenseheaders = "*"
+pycodestyle = "*"
+pyflakes = "*"
+pylint = "*"
+pyupgrade = "*"
+
+
+[scripts]
+autoflake = "autoflake -r --in-place --remove-all-unused-imports pylinksys_jnap"
+bandit = "bandit -r pylinksys_jnap"
+black = "black pylinksys_jnap"
+flake8 = "flake8 pylinksys_jnap"
+isort = "isort ."
+license = "licenseheaders -t .copyright.tmpl --ext py --current-year --owner 'Sascha Montellese <sascha.montellese@gmail.com>' --projname 'pylinksys_jnap'"
+pylint = "pylint pylinksys_jnap"
+pyupgrade = "pyupgrade"
